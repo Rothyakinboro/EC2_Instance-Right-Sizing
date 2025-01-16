@@ -10,7 +10,7 @@ resource "aws_lambda_function" "Ec2-Right-Size-lambda" {
 
   environment {
     variables = {
-      SNS_TOPIC_ARN = aws_sns_topic.Ec2-Right-Sizing-SNS.arn
+      sns_topic_arn = aws_sns_topic.Ec2-Right-Sizing-SNS.arn
     }
   }
 
